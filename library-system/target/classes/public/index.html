@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Наукова бібліотека НУВГП</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; height: 100vh; background-color: #f4f7f6; }
+        
+        /* СИНЯ ПАНЕЛЬ ЗЛІВА */
+        .sidebar { 
+            width: 260px; 
+            background-color: #814a2a; /* Темно-синій колір як на макеті */
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            padding: 30px 0;
+        }
+
+        .header { padding: 0 20px 30px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .header h2 { font-size: 18px; margin: 0; }
+        .header p { font-size: 12px; color: #000000; margin: 5px 0 0; }
+
+        .menu-section { padding: 20px 0; }
+        .section-title { font-size: 17px; text-transform: uppercase; color: #000000; padding: 0 20px 10px; letter-spacing: 1px; }
+
+        .menu-item { 
+            padding: 12px 20px; 
+            display: flex; 
+            align-items: center; 
+            cursor: pointer; 
+            transition: 0.3s;
+            font-size: 17px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .menu-item:hover { background-color: #3b1803; color: white; }
+        .menu-item.active { background-color: #3b1803; border-left: 4px solid #000000; color: white; }
+
+        .admin-footer { margin-top: auto; padding: 20px; background-color: #3b1803; }
+        .admin-name { font-weight: bold; font-size: 14px; display: block; }
+        .admin-role { font-size: 15px; color: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="header">
+            <h2>Наукова бібліотека</h2>
+            <p>НУВГП - Рівне</p>
+        </div>
+
+        <div class="menu-section">
+            <div class="section-title">Головне меню</div>
+            <a href="#" class="menu-item active">🏠 Головна</a>
+            <a href="#" class="menu-item">👥 Відвідувачі</a>
+            <a href="#" class="menu-item">📝 Реєстрація відвідування</a>
+            <a href="#" class="menu-item">📊 Звіти та аналітика</a>
+        </div>
+
+        <div class="menu-section">
+            <div class="section-title">Система</div>
+            <a href="#" class="menu-item">⚙️ Адмін-панель</a>
+        </div>
+
+        <div class="admin-footer">
+            <span class="admin-role">Адміністратор</span>
+            <span class="admin-name">Шум Софія</span>
+        </div>
+    </div>
+
+    <div style="flex-grow: 1; padding: 40px;">
+        <h1>Вітаємо в системі!</h1>
+        <p>Виберіть розділ у меню зліва для початку роботи.</p>
+    </div>
+
+</body>
+</html>
